@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1037719008919",
+    "project_id": "studentescortsystem",
+    "storage_bucket": "studentescortsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037719008919:android:5778c6722a5cd982555bd2",
+        "android_client_info": {
+          "package_name": "com.example.studentescortsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037719008919-61h2atig4jcnsrd892tf13hud4n3cmk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqJOjUFk4LuLKZMcbiKapTTiaBeM5WjuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1037719008919-61h2atig4jcnsrd892tf13hud4n3cmk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

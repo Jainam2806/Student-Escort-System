@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".School.SchoolProfile"
+    android:background="#BDBDBD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#082271">
+
+
+            <ImageView
+                android:id="@+id/imageview_profile_dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_profile_pic">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textview_show_welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageview_profile_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="#0F0C306E"
+                android:hint="Login..."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"></TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white">
+
+            <!--            Name-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_profile"
+                android:background="@drawable/ic_profile">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_show_school_name"
+                android:layout_alignStart="@+id/ic_profile"
+                android:hint="Loding..."
+                android:textColor="@color/black"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/divider_school_name"
+                android:layout_below="@+id/textview_show_school_name"
+                android:background="@android:color/darker_gray"></View>
+
+            <!--           Email-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_email"
+                android:background="@drawable/ic_email"
+                android:layout_below="@+id/divider_school_name"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_show_school_email"
+                android:layout_alignStart="@+id/ic_email"
+                android:hint="Loding..."
+                android:layout_marginStart="50dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divider_school_name"
+                android:textSize="18sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/divider_school_email"
+                android:layout_below="@+id/textview_show_school_email"
+                android:background="@android:color/darker_gray"></View>
+
+            <!-- Pincode-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_school_pincode"
+                android:background="@drawable/baseline_pin_drop_24"
+                android:layout_below="@+id/divider_school_email"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_show_school_pincode"
+                android:layout_alignStart="@+id/ic_mobile"
+                android:hint="Loding..."
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divider_school_email"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/divider_school_pincode"
+                android:layout_below="@+id/textview_show_school_pincode"
+                android:background="@android:color/darker_gray"></View>
+            <!-- Mobile-->
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/ic_mobile"
+                android:background="@drawable/ic_mobile"
+                android:layout_below="@+id/divider_school_pincode"
+                android:layout_marginTop="20dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textview_show_school_mobile"
+                android:layout_alignStart="@+id/ic_mobile"
+                android:hint="Loding..."
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/divider_school_pincode"
+                android:textColor="@color/black"
+                android:textSize="18sp"></TextView>
+
+            <Button
+                android:id="@+id/button_school_generate"
+                android:layout_width="240dp"
+                android:layout_height="46dp"
+                android:layout_below="@id/textview_show_school_mobile"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="67dp"
+                android:layout_marginRight="127dp"
+                android:text="Choose way" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:elevation="10dp"
+                android:visibility="gone">
+
+            </ProgressBar>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/img"
+        android:label="EntriFy"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentEscortSystem"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".school.SchoolChooseWay"
+            android:exported="false" />
+        <activity
+            android:name=".school.SchoolProfile"
+            android:exported="false" />
+        <activity
+            android:name=".school.SchoolRegister"
+            android:exported="false" />
+        <activity
+            android:name=".school.SchoolLogin"
+            android:exported="false" />
+        <activity
+            android:name=".school.School_Another_Checker"
+            android:exported="false" />
+        <activity
+            android:name=".school.School_Input_Password"
+            android:exported="false" />
+        <activity
+            android:name=".school.SchoolMainPage"
+            android:exported="false" />
+        <activity
+            android:name=".parent.ParentGenerator"
+            android:exported="false" />
+        <activity
+            android:name=".parent.ParentUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".parent.ParentRegister"
+            android:exported="false" />
+        <activity
+            android:name=".parent.ParentLogin"
+            android:exported="false" />
+        <activity
+            android:name=".parent.ParentMainPage"
+            android:exported="false" /> <!-- <activity android:name=".GenerateActivity" android:exported="false"/> -->
+        <activity
+            android:name=".Profile.UploadProfilePicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.DeleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.UpdateProfileActivity"
+            android:exported="false" /> <!-- <activity android:name=".Profile.UserProfileActivity" android:exported="false"/> -->
+        <!-- <activity android:name=".LoginActivity" android:exported="false"/> -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".school.CaptureAct"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true" />
+    </application>
+
+</manifest>
